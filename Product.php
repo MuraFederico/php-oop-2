@@ -6,6 +6,8 @@ class Product {
     private $description;
     private $availability;
     private $brand;
+    private $target_animal;
+    private $discount = 0;
     function __construct($name, $price)
     {
         $this->name = $name;
@@ -84,6 +86,46 @@ class Product {
     public function setBrand($brand)
     {
         $this->brand = $brand;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of target_animal
+     */ 
+    public function getTarget_animal()
+    {
+        return $this->target_animal;
+    }
+
+    /**
+     * Set the value of target_animal
+     *
+     * @return  self
+     */ 
+    public function setTarget_animal($target_animal)
+    {
+        $this->target_animal = $target_animal;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of discount
+     */ 
+    public function getDiscount()
+    {
+        return $this->discount;
+    }
+
+    /**
+     * Set the value of discount
+     *
+     * @return  self
+     */ 
+    public function setDiscount($discount)
+    {
+        $this->discount = $discount;
 
         return $this;
     }
