@@ -2,7 +2,7 @@
 
 include __DIR__ . '/Product.php';
 
-class Accessories {
+class Accessories extends Product {
     private $features;
     
     /**
